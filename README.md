@@ -48,7 +48,7 @@ Textele ofertelor (`375%`, `UP TO £900`, butoanele) sunt text HTML real, se edi
 
    Cu Pages activ se poate folosi temporar `https://design-mkt-1.github.io/tw-mail/images/`, dar pentru producție recomandat un CDN propriu (Pages nu are SLA pentru trafic de campanie). Verificare: `grep -c 'images/' welcome-email.send.html` trebuie să dea 0.
 
-2. **Linkuri reale.** Toate `href` sunt placeholder (`https://example.com`, `/terms`, `/unsubscribe`, `https://t.me/example`) — de înlocuit.
+2. **Linkuri reale.** Toate `href` sunt placeholder — de înlocuit: `https://example.com` (12×), `https://example.com/terms`, `https://example.com/unsubscribe`, `https://t.me/example`.
 
 3. **Text real.** Paragraful de intro este încă lorem ipsum, exact ca în Figma.
 
