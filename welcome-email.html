@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=600">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="color-scheme" content="light">
+  <meta name="supported-color-schemes" content="light">
+  <title>Top-Win — Welcome</title>
+  <!--[if mso]>
+  <noscript><xml><o:OfficeDocumentSettings><o:PixelsPerInch>96</o:PixelsPerInch></o:OfficeDocumentSettings></xml></noscript>
+  <![endif]-->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@700;800&family=Space+Mono:wght@700&family=Inter:wght@400;800&display=swap');
+
+    html, body { margin: 0 !important; padding: 0 !important; width: 100% !important; }
+    * { -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; }
+    table, td { mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
+    img { -ms-interpolation-mode: bicubic; border: 0; outline: none; text-decoration: none; }
+    a { text-decoration: none; }
+
+    /* Fixed 600px layout, 1:1 with the Figma design. Deliberately no media
+       queries: mail clients and mobile browsers scale the whole email down to
+       fit instead of rearranging it. Please do not add breakpoints. */
+  </style>
+</head>
+<body style="margin:0; padding:0; background-color:#f0f9ff;">
+
+  <!-- ════════════════════════════════════════════════════════════════════
+       IMAGE BASE PATH - CHANGE THIS BEFORE SENDING
+
+       Mail clients cannot resolve relative paths. Upload images/ to your CDN
+       and replace the prefix everywhere:
+
+         images/          ->   https://cdn.yourdomain.com/topwin/
+
+       Match on "images/" alone, NOT on 'src="images/'. The 16 assets are
+       referenced 20 times and only 14 of those are src attributes:
+         14x  src="images/..."                  logo, hero, icons, games
+          2x  background="images/..."           card backgrounds, for Outlook (attribute)
+          2x  background-image:url('images/...') same two, every other client
+          2x  <v:fill src="images/...">         same two, Outlook desktop (VML)
+
+       Scoping the replace to src= leaves both offer cards on a dead path.
+       Check with: grep -c 'images/' welcome-email.html   (must return 0)
+       ════════════════════════════════════════════════════════════════════ -->
+
+  <!-- Preheader: hidden text, shown only in the inbox preview line -->
+  <!-- ═══════════ EDIT: PREHEADER ═══════════ -->
+  <div style="display:none; font-size:1px; line-height:1px; max-height:0; max-width:0; opacity:0; overflow:hidden; mso-hide:all;">
+    Welcome to Top-Win — claim your Sports &amp; Casino welcome bonuses.
+  </div>
+  <!-- ═══════════ /EDIT: PREHEADER ═══════════ -->
+
+  <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="background-color:#f0f9ff;">
+    <tr>
+      <td align="center">
+
+        <!--[if mso]><table role="presentation" cellpadding="0" cellspacing="0" border="0" width="600"><tr><td><![endif]-->
+        <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="600" style="width:600px; background-color:#f0f9ff;">
+
+          <!-- ────────────── HEADER / LOGO ────────────── -->
+          <tr>
+            <td align="center" style="padding:24px;">
+              <a href="https://example.com" target="_blank">
+                <img src="images/logo.png" width="224" height="40" alt="Top-Win" style="display:block; width:224px; height:40px;">
+              </a>
+            </td>
+          </tr>
+
+          <!-- ═══════════ EDIT: HERO BANNER ═══════════ -->
+          <tr>
+            <td align="center" style="padding:0 24px;">
+              <a href="https://example.com" target="_blank">
+                <img src="images/hero-banner.jpg" width="552" height="276" alt="Top-Win welcome offer: sport and casino promo banner" style="display:block; width:552px; height:276px; border-radius:12px;">
+              </a>
+            </td>
+          </tr>
+          <!-- ═══════════ /EDIT: HERO BANNER ═══════════ -->
+
+          <!-- ═══════════ EDIT: HEADLINE + INTRO ═══════════ -->
+          <tr>
+            <td style="padding:24px 24px 16px 24px;">
+              <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="background-color:#e0f2fe; border-radius:12px;">
+                <tr>
+                  <td align="center" style="padding:12px;">
+                    <h1 style="margin:0; font-family:'Outfit','Segoe UI',Arial,Helvetica,sans-serif; font-weight:700; font-size:30px; line-height:38px; color:#02123a; text-align:center;">
+                      Welcome to the ultimate gaming experience
+                    </h1>
+                    <p style="margin:8px 0 0 0; font-family:'Inter','Segoe UI',Arial,sans-serif; font-weight:400; font-size:15px; line-height:24px; color:#475569; text-align:center;">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+                    </p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- ═══════════ /EDIT: HEADLINE + INTRO ═══════════ -->
+
+          <!-- ────────────── BONUS OFFER CARDS ────────────── -->
+          <tr>
+            <td style="padding:16px 24px;">
+              <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+                <tr>
+
+                  <!-- ═══════════ EDIT: SPORTS OFFER ═══════════ -->
+                  <td width="268" valign="top" height="255" background="images/card-sports-bg.jpg" bgcolor="#eff6ff" style="width:268px; height:255px; background-image:url('images/card-sports-bg.jpg'); background-size:cover; background-position:center; background-repeat:no-repeat; background-color:#eff6ff; border:1px solid #bfdbfe; border-radius:24px; box-shadow:0 16px 32px rgba(29,78,216,.2);">
+                    <!--[if gte mso 9]>
+                    <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:268px; height:255px;">
+                      <v:fill type="frame" src="images/card-sports-bg.jpg" color="#eff6ff" />
+                      <v:textbox inset="0,0,0,0">
+                    <![endif]-->
+                    <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" height="253" style="height:253px;">
+                      <tr>
+                        <td align="center" valign="middle" style="padding:24px 40px;">
+                          <!-- badge -->
+                          <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center">
+                            <tr>
+                              <td align="center" height="28" style="background-color:#dbeafe; border:1.5px solid #2563eb; border-radius:100px; padding:4px 16px;">
+                                <span style="font-family:'Space Mono','Courier New',monospace; font-weight:700; font-size:12px; line-height:18px; color:#1d4ed8; text-transform:uppercase;">Sports&nbsp;Welcome</span>
+                              </td>
+                            </tr>
+                          </table>
+                          <!-- offer amount -->
+                          <div style="margin-top:12px; font-family:'Outfit','Segoe UI',Arial,Helvetica,sans-serif; font-weight:800; font-size:34px; line-height:34px; color:#0f172a; text-align:center;">375%</div>
+                          <div style="margin-top:8px; font-family:'Space Mono','Courier New',monospace; font-weight:700; font-size:18px; line-height:26px; color:#0f172a; text-align:center;">UP&nbsp;TO&nbsp;&pound;900</div>
+                          <!-- wagering tag -->
+                          <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" style="margin-top:8px;">
+                            <tr>
+                              <td align="center" height="28" style="background-color:#dbeafe; border:1px solid #93c5fd; border-radius:12px; padding:3px 8px;">
+                                <span style="font-family:'Space Mono','Courier New',monospace; font-weight:700; font-size:12px; line-height:20px; color:#2563eb;">&#10022; WAGER-FREE BONUS &#10022;</span>
+                              </td>
+                            </tr>
+                          </table>
+                          <!-- CTA button -->
+                          <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="margin-top:18px;">
+                            <tr>
+                              <td align="center" bgcolor="#2563eb" style="background-color:#2563eb;  border-radius:100px;">
+                                <a href="https://example.com" target="_blank" style="display:block; padding:13px 8px; font-family:'Inter','Segoe UI',Arial,sans-serif; font-weight:800; font-size:14px; line-height:18px; color:#ffffff; text-align:center;">CLAIM&nbsp;SPORT&nbsp;BONUS</a>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                    <!--[if gte mso 9]>
+                      </v:textbox>
+                    </v:rect>
+                    <![endif]-->
+                  </td>
+                  <!-- ═══════════ /EDIT: SPORTS OFFER ═══════════ -->
+
+                  <td width="16" style="width:16px; font-size:0; line-height:0;">&nbsp;</td>
+
+                  <!-- ═══════════ EDIT: CASINO OFFER ═══════════ -->
+                  <td width="268" valign="top" height="255" background="images/card-casino-bg.jpg" bgcolor="#fef3c7" style="width:268px; height:255px; background-image:url('images/card-casino-bg.jpg'); background-size:cover; background-position:center; background-repeat:no-repeat; background-color:#fef3c7; border:1px solid #fde68a; border-radius:24px; box-shadow:0 16px 32px rgba(245,158,11,.2);">
+                    <!--[if gte mso 9]>
+                    <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:268px; height:255px;">
+                      <v:fill type="frame" src="images/card-casino-bg.jpg" color="#fef3c7" />
+                      <v:textbox inset="0,0,0,0">
+                    <![endif]-->
+                    <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" height="253" style="height:253px;">
+                      <tr>
+                        <td align="center" valign="middle" style="padding:24px 40px;">
+                          <!-- badge -->
+                          <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center">
+                            <tr>
+                              <td align="center" height="28" style="background-color:#fef3c7; border:1.5px solid #f59e0b; border-radius:100px; padding:4px 16px;">
+                                <span style="font-family:'Space Mono','Courier New',monospace; font-weight:700; font-size:12px; line-height:18px; color:#92400e; text-transform:uppercase;">Casino&nbsp;Welcome</span>
+                              </td>
+                            </tr>
+                          </table>
+                          <!-- offer amount -->
+                          <div style="margin-top:12px; font-family:'Outfit','Segoe UI',Arial,Helvetica,sans-serif; font-weight:800; font-size:34px; line-height:34px; color:#92400e; text-align:center;">&pound;5,500</div>
+                          <div style="margin-top:8px; font-family:'Space Mono','Courier New',monospace; font-weight:700; font-size:18px; line-height:26px; color:#92400e; text-align:center;">UP&nbsp;TO&nbsp;250&nbsp;FS</div>
+                          <!-- wagering tag -->
+                          <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" style="margin-top:8px;">
+                            <tr>
+                              <td align="center" height="28" style="background-color:#fef3c7; border:1px solid #f59e0b; border-radius:12px; padding:3px 8px;">
+                                <span style="font-family:'Space Mono','Courier New',monospace; font-weight:700; font-size:12px; line-height:20px; color:#92400e;">&#10022; LOW WAGER X10 &#10022;</span>
+                              </td>
+                            </tr>
+                          </table>
+                          <!-- CTA button -->
+                          <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="margin-top:18px;">
+                            <tr>
+                              <td align="center" bgcolor="#ff6a00" style="background-color:#ff6a00; background-image:linear-gradient(90deg,#ff8c00,#ff4500); border-radius:100px;">
+                                <a href="https://example.com" target="_blank" style="display:block; padding:13px 8px; font-family:'Inter','Segoe UI',Arial,sans-serif; font-weight:800; font-size:14px; line-height:18px; color:#ffffff; text-align:center;">CLAIM&nbsp;CASINO&nbsp;BONUS</a>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                    <!--[if gte mso 9]>
+                      </v:textbox>
+                    </v:rect>
+                    <![endif]-->
+                  </td>
+                  <!-- ═══════════ /EDIT: CASINO OFFER ═══════════ -->
+
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- ────────────── "POPULAR" SECTION HEADING ────────────── -->
+          <tr>
+            <td style="padding:16px 33px 0 33px;">
+              <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+                <tr>
+                  <td width="34" style="width:34px;">
+                    <img src="images/icon-shield.png" width="34" height="34" alt="" style="display:block; width:34px; height:34px;">
+                  </td>
+                  <td style="padding-left:8px;" width="90">
+                    <span style="font-family:'Inter','Segoe UI',Arial,sans-serif; font-weight:800; font-size:15px; line-height:18px; color:#03143b; text-transform:uppercase; white-space:nowrap;">Popular</span>
+                  </td>
+                  <td style="padding-left:8px;">
+                    <div style="border-top:2px dotted #c9dcf4; font-size:0; line-height:0;">&nbsp;</div>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- ═══════════ EDIT: POPULAR GAMES ROW ═══════════ -->
+          <tr>
+            <td style="padding:16px 33px 0 33px;">
+              <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+                <tr>
+                  <td width="124" style="width:124px;"><a href="https://example.com" target="_blank"><img src="images/game-1.jpg" width="124" height="148" alt="Bigger Bass Splash" style="display:block; width:124px; height:148px; border-radius:14px;"></a></td>
+                  <td style="font-size:0; line-height:0;">&nbsp;</td>
+                  <td width="124" style="width:124px;"><a href="https://example.com" target="_blank"><img src="images/game-2.jpg" width="124" height="148" alt="The Big Catch" style="display:block; width:124px; height:148px; border-radius:14px;"></a></td>
+                  <td style="font-size:0; line-height:0;">&nbsp;</td>
+                  <td width="124" style="width:124px;"><a href="https://example.com" target="_blank"><img src="images/game-3.jpg" width="124" height="148" alt="Sugar Rush 1000" style="display:block; width:124px; height:148px; border-radius:14px;"></a></td>
+                  <td style="font-size:0; line-height:0;">&nbsp;</td>
+                  <td width="124" style="width:124px;"><a href="https://example.com" target="_blank"><img src="images/game-4.jpg" width="124" height="148" alt="Book of Ra" style="display:block; width:124px; height:148px; border-radius:14px;"></a></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- ═══════════ /EDIT: POPULAR GAMES ROW ═══════════ -->
+
+          <!-- ────────────── "TOP GAMES" SECTION HEADING ────────────── -->
+          <tr>
+            <td style="padding:20px 33px 0 33px;">
+              <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+                <tr>
+                  <td width="34" style="width:34px;">
+                    <img src="images/icon-trophy.png" width="34" height="34" alt="" style="display:block; width:34px; height:34px;">
+                  </td>
+                  <td style="padding-left:8px;" width="108">
+                    <span style="font-family:'Inter','Segoe UI',Arial,sans-serif; font-weight:800; font-size:15px; line-height:18px; color:#03143b; text-transform:uppercase; white-space:nowrap;">Top&nbsp;Games</span>
+                  </td>
+                  <td style="padding-left:8px;">
+                    <div style="border-top:2px dotted #c9dcf4; font-size:0; line-height:0;">&nbsp;</div>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- ═══════════ EDIT: TOP GAMES ROW ═══════════ -->
+          <tr>
+            <td style="padding:16px 33px 0 33px;">
+              <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+                <tr>
+                  <td width="124" style="width:124px;"><a href="https://example.com" target="_blank"><img src="images/game-5.jpg" width="124" height="148" alt="Gates of Olympus 1000" style="display:block; width:124px; height:148px; border-radius:14px;"></a></td>
+                  <td style="font-size:0; line-height:0;">&nbsp;</td>
+                  <td width="124" style="width:124px;"><a href="https://example.com" target="_blank"><img src="images/game-6.jpg" width="124" height="148" alt="Sweet Bonanza 1000" style="display:block; width:124px; height:148px; border-radius:14px;"></a></td>
+                  <td style="font-size:0; line-height:0;">&nbsp;</td>
+                  <td width="124" style="width:124px;"><a href="https://example.com" target="_blank"><img src="images/game-7.jpg" width="124" height="148" alt="Wild Bandito" style="display:block; width:124px; height:148px; border-radius:14px;"></a></td>
+                  <td style="font-size:0; line-height:0;">&nbsp;</td>
+                  <td width="124" style="width:124px;"><a href="https://example.com" target="_blank"><img src="images/game-8.jpg" width="124" height="148" alt="Book of Dead" style="display:block; width:124px; height:148px; border-radius:14px;"></a></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- ═══════════ /EDIT: TOP GAMES ROW ═══════════ -->
+
+          <!-- ────────────── TELEGRAM / TERMS / 18+ ────────────── -->
+          <tr>
+            <td align="center" style="padding:36px 24px 0 24px;">
+              <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" bgcolor="#ffffff" style="background-color:#ffffff; border:1px solid #bfdbfe; border-radius:1000px;">
+                <tr>
+                  <td style="padding:12px;">
+                    <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center">
+                      <tr>
+                        <td valign="middle">
+                          <a href="https://t.me/example" target="_blank">
+                            <img src="images/icon-telegram.png" width="54" height="54" alt="Telegram" style="display:block; width:54px; height:54px;">
+                          </a>
+                        </td>
+                        <td width="16" style="width:16px;">&nbsp;</td>
+                        <td valign="middle" width="213" height="54" align="center" bgcolor="#dbeafe" style="width:213px; height:54px; background-color:#dbeafe; border-radius:100px;">
+                          <a href="https://example.com/terms" target="_blank" style="display:block; font-family:'Inter','Segoe UI',Arial,sans-serif; font-weight:400; font-size:15px; line-height:54px; color:#1d4ed8; text-align:center;">Bonus terms &amp; conditions</a>
+                        </td>
+                        <td width="16" style="width:16px;">&nbsp;</td>
+                        <td valign="middle">
+                          <img src="images/icon-18plus.png" width="54" height="54" alt="18+" style="display:block; width:54px; height:54px;">
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- ────────────── FOOTER ────────────── -->
+          <tr>
+            <td align="center" style="padding:40px 24px 56px 24px;">
+              <a href="https://example.com/unsubscribe" target="_blank" style="font-family:'Inter','Segoe UI',Arial,sans-serif; font-weight:400; font-size:13px; line-height:20px; color:#64748b; text-decoration:underline;">Unsubscribe</a>
+            </td>
+          </tr>
+
+        </table>
+        <!--[if mso]></td></tr></table><![endif]-->
+
+      </td>
+    </tr>
+  </table>
+
+</body>
+</html>

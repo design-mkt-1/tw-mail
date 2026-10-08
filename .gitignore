@@ -1,0 +1,8 @@
+# Inregistrari si capturi de test - nu se publica (repo-ul e public)
+*.MP4
+*.mp4
+*.MOV
+*.mov
+
+# Arhive de livrare - continutul e deja versionat separat
+*.zip
